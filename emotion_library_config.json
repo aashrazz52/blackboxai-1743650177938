@@ -1,0 +1,223 @@
+{
+  "component": "EmotionLibrary",
+  "emotions": [
+    {
+      "name": "Happiness",
+      "icon": "https://cdn-icons-png.flaticon.com/512/616/616408.png",
+      "description": "A state of well-being characterized by emotions ranging from contentment to intense joy. Often accompanied by positive thoughts, smiling, and relaxed body language.",
+      "triggers": [
+        "Achieving a goal",
+        "Positive social interactions",
+        "Engaging in enjoyable activities",
+        "Unexpected good news",
+        "Moments of gratitude"
+      ],
+      "tips": [
+        "Savor and prolong positive moments",
+        "Share your happiness with others",
+        "Practice gratitude journaling",
+        "Engage in activities you love",
+        "Be present in joyful moments"
+      ],
+      "color": "#FFD166"
+    },
+    {
+      "name": "Sadness",
+      "icon": "https://cdn-icons-png.flaticon.com/512/1146/1146850.png",
+      "description": "An emotional pain associated with feelings of disadvantage, loss, despair or helplessness. Characterized by crying, withdrawal, and low energy.",
+      "triggers": [
+        "Loss or grief",
+        "Disappointment",
+        "Loneliness",
+        "Failure",
+        "Witnessing suffering"
+      ],
+      "tips": [
+        "Allow yourself to feel without judgment",
+        "Reach out to supportive people",
+        "Engage in gentle self-care",
+        "Express through art or writing",
+        "Remember it's temporary"
+      ],
+      "color": "#A3BFFA"
+    },
+    {
+      "name": "Anger",
+      "icon": "https://cdn-icons-png.flaticon.com/512/1828/1828884.png",
+      "description": "A strong feeling of displeasure or hostility, often in response to perceived wrong or injustice. May manifest as irritation, frustration, or rage.",
+      "triggers": [
+        "Perceived injustice",
+        "Boundary violations",
+        "Frustration with obstacles",
+        "Feeling disrespected",
+        "Unmet expectations"
+      ],
+      "tips": [
+        "Pause before reacting",
+        "Use deep breathing techniques",
+        "Express feelings constructively",
+        "Identify underlying needs",
+        "Channel energy into physical activity"
+      ],
+      "color": "#EF476F"
+    },
+    {
+      "name": "Fear",
+      "icon": "https://cdn-icons-png.flaticon.com/512/1828/1828884.png",
+      "description": "An emotional response to perceived threats or danger, triggering the fight-or-flight response. Can range from mild anxiety to intense terror.",
+      "triggers": [
+        "Real or imagined danger",
+        "Uncertainty about the future",
+        "Traumatic memories",
+        "Loss of control",
+        "New or unfamiliar situations"
+      ],
+      "tips": [
+        "Practice grounding techniques",
+        "Break challenges into smaller steps",
+        "Challenge catastrophic thinking",
+        "Gradual exposure to fears",
+        "Seek support when needed"
+      ],
+      "color": "#6A4C93"
+    },
+    {
+      "name": "Anxiety",
+      "icon": "https://cdn-icons-png.flaticon.com/512/1828/1828884.png",
+      "description": "A persistent state of worry or unease about future events, often disproportionate to the actual threat. May include physical symptoms like rapid heartbeat.",
+      "triggers": [
+        "Stressful life events",
+        "Perfectionism",
+        "Health concerns",
+        "Financial worries",
+        "Social situations"
+      ],
+      "tips": [
+        "Practice mindfulness meditation",
+        "Limit caffeine and alcohol",
+        "Establish a worry time",
+        "Challenge anxious thoughts",
+        "Maintain regular sleep schedule"
+      ],
+      "color": "#FF9A5A"
+    },
+    {
+      "name": "Loneliness",
+      "icon": "https://cdn-icons-png.flaticon.com/512/1828/1828884.png",
+      "description": "A complex emotional response to isolation or lack of meaningful connections, regardless of actual social contact. Characterized by emptiness and longing.",
+      "triggers": [
+        "Physical isolation",
+        "Feeling misunderstood",
+        "Life transitions",
+        "Relationship changes",
+        "Social anxiety"
+      ],
+      "tips": [
+        "Reach out to old connections",
+        "Join interest-based communities",
+        "Practice self-compassion",
+        "Volunteer to help others",
+        "Develop comfort with solitude"
+      ],
+      "color": "#8AC4D0"
+    },
+    {
+      "name": "Overwhelm",
+      "icon": "https://cdn-icons-png.flaticon.com/512/1828/1828884.png",
+      "description": "A state of being completely overcome by thoughts or feelings, making it difficult to function. Often feels like too much is happening at once.",
+      "triggers": [
+        "Excessive responsibilities",
+        "Information overload",
+        "Lack of boundaries",
+        "Perfectionism",
+        "Unexpected changes"
+      ],
+      "tips": [
+        "Prioritize and delegate tasks",
+        "Take micro-breaks throughout day",
+        "Practice single-tasking",
+        "Create clear boundaries",
+        "Break tasks into smaller steps"
+      ],
+      "color": "#B8B8FF"
+    },
+    {
+      "name": "Nostalgia",
+      "icon": "https://cdn-icons-png.flaticon.com/512/1828/1828884.png",
+      "description": "A sentimental longing for the past, often for periods or events with happy personal associations. Can be bittersweet or comforting.",
+      "triggers": [
+        "Familiar smells or music",
+        "Anniversaries or milestones",
+        "Periods of transition",
+        "Visiting old places",
+        "Current stress"
+      ],
+      "tips": [
+        "Use nostalgia for comfort in moderation",
+        "Create new positive memories",
+        "Journal about past experiences",
+        "Connect with people who share memories",
+        "Balance reminiscing with present focus"
+      ],
+      "color": "#D4A5A5"
+    },
+    {
+      "name": "Hope",
+      "icon": "https://cdn-icons-png.flaticon.com/512/1828/1828884.png",
+      "description": "A positive emotional state based on expectation of positive outcomes. Combines desire with expectation of fulfillment.",
+      "triggers": [
+        "Positive role models",
+        "Small successes",
+        "Supportive relationships",
+        "Evidence of progress",
+        "Inspirational stories"
+      ],
+      "tips": [
+        "Practice gratitude",
+        "Visualize positive outcomes",
+        "Surround yourself with hopeful people",
+        "Celebrate small wins",
+        "Maintain realistic optimism"
+      ],
+      "color": "#A7F3D0"
+    },
+    {
+      "name": "Confusion",
+      "icon": "https://cdn-icons-png.flaticon.com/512/1828/1828884.png",
+      "description": "A state of uncertainty or lack of clarity about a situation, decision, or information. May cause frustration or indecision.",
+      "triggers": [
+        "Contradictory information",
+        "Complex problems",
+        "Lack of knowledge",
+        "Cognitive overload",
+        "Rapid changes"
+      ],
+      "tips": [
+        "Ask clarifying questions",
+        "Break information into chunks",
+        "Allow time for processing",
+        "Seek multiple perspectives",
+        "Accept temporary uncertainty"
+      ],
+      "color": "#D8B5FF"
+    }
+  ],
+  "styles": {
+    "flashcard": {
+      "width": "300px",
+      "height": "400px",
+      "borderRadius": "16px",
+      "boxShadow": "0 4px 20px rgba(0,0,0,0.1)",
+      "transition": "all 0.3s ease",
+      "hoverEffect": {
+        "transform": "translateY(-5px)",
+        "boxShadow": "0 8px 25px rgba(0,0,0,0.15)"
+      }
+    },
+    "grid": {
+      "columns": 3,
+      "gap": "30px",
+      "padding": "40px"
+    }
+  }
+}
