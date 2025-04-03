@@ -1,0 +1,144 @@
+{
+  "component": "PHQ9Questionnaire",
+  "title": "Mental Health Check-In",
+  "description": "Over the last 2 weeks, how often have you been bothered by any of the following problems?",
+  "questions": [
+    {
+      "id": 1,
+      "text": "Little interest or pleasure in doing things",
+      "options": [
+        {"value": 0, "label": "Not at all"},
+        {"value": 1, "label": "Several days"},
+        {"value": 2, "label": "More than half the days"},
+        {"value": 3, "label": "Nearly every day"}
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Feeling down, depressed, or hopeless",
+      "options": [
+        {"value": 0, "label": "Not at all"},
+        {"value": 1, "label": "Several days"},
+        {"value": 2, "label": "More than half the days"},
+        {"value": 3, "label": "Nearly every day"}
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Trouble falling or staying asleep, or sleeping too much",
+      "options": [
+        {"value": 0, "label": "Not at all"},
+        {"value": 1, "label": "Several days"},
+        {"value": 2, "label": "More than half the days"},
+        {"value": 3, "label": "Nearly every day"}
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Feeling tired or having little energy",
+      "options": [
+        {"value": 0, "label": "Not at all"},
+        {"value": 1, "label": "Several days"},
+        {"value": 2, "label": "More than half the days"},
+        {"value": 3, "label": "Nearly every day"}
+      ]
+    },
+    {
+      "id": 5,
+      "text": "Poor appetite or overeating",
+      "options": [
+        {"value": 0, "label": "Not at all"},
+        {"value": 1, "label": "Several days"},
+        {"value": 2, "label": "More than half the days"},
+        {"value": 3, "label": "Nearly every day"}
+      ]
+    },
+    {
+      "id": 6,
+      "text": "Feeling bad about yourself - or that you are a failure or have let yourself or your family down",
+      "options": [
+        {"value": 0, "label": "Not at all"},
+        {"value": 1, "label": "Several days"},
+        {"value": 2, "label": "More than half the days"},
+        {"value": 3, "label": "Nearly every day"}
+      ]
+    },
+    {
+      "id": 7,
+      "text": "Trouble concentrating on things, such as reading the newspaper or watching television",
+      "options": [
+        {"value": 0, "label": "Not at all"},
+        {"value": 1, "label": "Several days"},
+        {"value": 2, "label": "More than half the days"},
+        {"value": 3, "label": "Nearly every day"}
+      ]
+    },
+    {
+      "id": 8,
+      "text": "Moving or speaking so slowly that other people could have noticed? Or the opposite - being so fidgety or restless that you have been moving around a lot more than usual",
+      "options": [
+        {"value": 0, "label": "Not at all"},
+        {"value": 1, "label": "Several days"},
+        {"value": 2, "label": "More than half the days"},
+        {"value": 3, "label": "Nearly every day"}
+      ]
+    },
+    {
+      "id": 9,
+      "text": "Thoughts that you would be better off dead or of hurting yourself in some way",
+      "options": [
+        {"value": 0, "label": "Not at all"},
+        {"value": 1, "label": "Several days"},
+        {"value": 2, "label": "More than half the days"},
+        {"value": 3, "label": "Nearly every day"}
+      ]
+    }
+  ],
+  "scoring": {
+    "ranges": [
+      {"min": 0, "max": 4, "label": "Minimal depression", "color": "#A7F3D0"},
+      {"min": 5, "max": 9, "label": "Mild depression", "color": "#A3BFFA"},
+      {"min": 10, "max": 14, "label": "Moderate depression", "color": "#FFD166"},
+      {"min": 15, "max": 19, "label": "Moderately severe depression", "color": "#FF9A5A"},
+      {"min": 20, "max": 27, "label": "Severe depression", "color": "#EF476F"}
+    ],
+    "criticalResponse": {
+      "threshold": 1,
+      "questionId": 9,
+      "message": "If you're having thoughts of self-harm, please reach out to a mental health professional or call a crisis hotline immediately. You're not alone.",
+      "resources": [
+        "National Suicide Prevention Lifeline: 988",
+        "Crisis Text Line: Text HOME to 741741"
+      ]
+    }
+  },
+  "navigation": {
+    "prevButton": {
+      "text": "← Previous",
+      "color": "#D4C4FB"
+    },
+    "nextButton": {
+      "text": "Next →",
+      "color": "#A3BFFA"
+    },
+    "submitButton": {
+      "text": "Get Results",
+      "color": "#4A6FA5"
+    }
+  },
+  "resultPage": {
+    "displayScore": true,
+    "suggestions": {
+      "minimal": "Your score suggests you're doing well. Maintain healthy habits and check in periodically.",
+      "mild": "Consider practicing self-care and monitoring your mood. Reach out if symptoms persist.",
+      "moderate": "This suggests significant symptoms. Consider speaking with a healthcare provider.",
+      "moderatelySevere": "These symptoms are substantial. Professional help is recommended.",
+      "severe": "Please seek professional help. These symptoms are significantly impacting your wellbeing."
+    },
+    "resources": [
+      "Therapist directories: PsychologyToday.com, GoodTherapy.org",
+      "Mental health apps: Headspace, Calm, Woebot",
+      "Workbook: \"The Cognitive Behavioral Workbook for Depression\""
+    ]
+  }
+}
