@@ -1,0 +1,64 @@
+{
+  "component": "BentoGrid",
+  "gridLayout": {
+    "columns": 2,
+    "gap": "20px",
+    "padding": "40px"
+  },
+  "tiles": [
+    {
+      "title": "Emotion Library",
+      "icon": "https://cdn-icons-png.flaticon.com/512/1570/1570887.png",
+      "description": "Explore and understand your emotions",
+      "animation": "glow 2s infinite alternate",
+      "color": "#E6F0FA",
+      "action": "/emotion-library"
+    },
+    {
+      "title": "Community",
+      "icon": "https://cdn-icons-png.flaticon.com/512/2462/2462719.png",
+      "description": "Share and connect anonymously",
+      "animation": "pulse 1.5s infinite",
+      "color": "#D4C4FB",
+      "action": "/community"
+    },
+    {
+      "title": "Questionnaire",
+      "icon": "https://cdn-icons-png.flaticon.com/512/190/190411.png",
+      "description": "Assess your mental well-being",
+      "animation": "bounce 2s infinite",
+      "color": "#F8F1FF",
+      "action": "/questionnaire"
+    },
+    {
+      "title": "Journaling Prompts",
+      "icon": "https://cdn-icons-png.flaticon.com/512/2784/2784487.png",
+      "description": "Reflect through guided writing",
+      "animation": "wave 3s infinite",
+      "color": "#A7F3D0",
+      "action": "/journaling"
+    }
+  ],
+  "styles": {
+    "tile": {
+      "borderRadius": "16px",
+      "padding": "20px",
+      "height": "200px",
+      "hoverEffect": {
+        "transform": "scale(1.03)",
+        "boxShadow": "0 4px 20px rgba(0,0,0,0.1)"
+      }
+    },
+    "animations": {
+      "glow": {
+        "0%": { "boxShadow": "0 0 5px #E6F0FA" },
+        "100%": { "boxShadow": "0 0 20px #E6F0FA" }
+      },
+      "wave": {
+        "0%": { "transform": "translateY(0)" },
+        "50%": { "transform": "translateY(-5px)" },
+        "100%": { "transform": "translateY(0)" }
+      }
+    }
+  }
+}
