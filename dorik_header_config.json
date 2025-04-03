@@ -1,0 +1,49 @@
+{
+  "component": "Header",
+  "styles": {
+    "logo": {
+      "text": "INNERSPACE",
+      "fontFamily": "Poppins",
+      "fontSize": "36px",
+      "color": "#4A6FA5",
+      "textDecoration": "underline",
+      "textDecorationColor": "rgba(74, 111, 165, 0.3)"
+    },
+    "navigation": {
+      "items": [
+        {
+          "text": "Menu",
+          "subItems": [
+            "Emotion Library",
+            "Community",
+            "Questionnaire",
+            "Journaling Prompts"
+          ]
+        },
+        "About",
+        "Contact",
+        {
+          "text": "Login",
+          "isButton": true,
+          "buttonStyle": {
+            "backgroundColor": "#A3BFFA",
+            "hoverBackgroundColor": "#8CABE8",
+            "padding": "8px 16px",
+            "borderRadius": "8px"
+          }
+        }
+      ],
+      "hoverEffects": {
+        "scale": 1.05,
+        "transition": "all 0.2s ease"
+      }
+    },
+    "background": {
+      "gradient": {
+        "colors": ["#E6F0FA", "#D4C4FB"],
+        "direction": "to right"
+      },
+      "padding": "20px 0"
+    }
+  }
+}
