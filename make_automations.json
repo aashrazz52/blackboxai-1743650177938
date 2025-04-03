@@ -1,0 +1,118 @@
+{
+  "automations": [
+    {
+      "name": "New User Welcome Flow",
+      "trigger": "Supabase: New User Registration",
+      "actions": [
+        {
+          "type": "Email",
+          "template": "welcome_email",
+          "recipient": "{{user.email}}",
+          "subject": "Welcome to InnerSpace!",
+          "body": "Hi there! We're so glad you joined InnerSpace. Here are some ways to get started:\n\n- Explore our Emotion Library\n- Try a journaling prompt\n- Connect with our community\n\nLet us know if you have any questions!\n\nThe InnerSpace Team"
+        },
+        {
+          "type": "Supabase",
+          "action": "CreateProfile",
+          "data": {
+            "user_id": "{{user.id}}",
+            "first_login": "{{now}}"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Journal Entry Reminder",
+      "trigger": "Schedule: Daily at 9AM",
+      "conditions": "{{user.last_login}} > {{daysAgo(7)}}",
+      "actions": [
+        {
+          "type": "Email",
+          "template": "journal_reminder",
+          "recipient": "{{user.email}}",
+          "subject": "Your journal awaits 📔",
+          "body": "Hi {{user.first_name}},\n\nTake a moment today to reflect with one of our journaling prompts:\n\n'{{randomPrompt}}'\n\nWe're here when you're ready to write.\n\n- The InnerSpace Team"
+        },
+        {
+          "type": "PushNotification",
+          "title": "Time for reflection",
+          "message": "Tap to see today's journaling prompt"
+        }
+      ]
+    },
+    {
+      "name": "Community Engagement Alert",
+      "trigger": "Supabase: New Community Post",
+      "actions": [
+        {
+          "type": "Slack",
+          "channel": "community-activity",
+          "message": "New post in InnerSpace community:\n\n{{post.content}}\n\nPosted by user {{post.user_id}}"
+        }
+      ]
+    },
+    {
+      "name": "PHQ-9 Follow-up",
+      "trigger": "Supabase: Questionnaire Completed",
+      "conditions": "{{questionnaire.score}} >= 10",
+      "actions": [
+        {
+          "type": "Email",
+          "template": "care_followup",
+          "recipient": "{{user.email}}",
+          "subject": "We're here for you",
+          "body": "Hi there,\n\nThank you for completing your mental health check-in. Based on your responses, we want to share these resources that might be helpful:\n\n- Crisis Text Line: Text HOME to 741741\n- National Suicide Prevention Lifeline: 988\n- Therapist directories: PsychologyToday.com\n\nYou're not alone.\n\nThe InnerSpace Team"
+        }
+      ]
+    },
+    {
+      "name": "Weekly Digest",
+      "trigger": "Schedule: Weekly on Fridays at 5PM",
+      "actions": [
+        {
+          "type": "Email",
+          "template": "weekly_digest",
+          "recipient": "{{user.email}}",
+          "subject": "Your InnerSpace weekly digest",
+          "body": "Here's what's happening in your InnerSpace community this week:\n\n- {{popularPosts}} most engaged with posts\n- {{newPrompts}} new journaling prompts added\n- Community highlight: {{featuredPost}}\n\nSee you inside!\n\nThe InnerSpace Team"
+        }
+      ]
+    }
+  ],
+  "templates": {
+    "welcome_email": {
+      "design": "modern",
+      "brandColors": ["#4A6FA5", "#A3BFFA"],
+      "footer": "© 2025 InnerSpace | Mental peace"
+    },
+    "journal_reminder": {
+      "design": "minimal",
+      "includePrompt": true,
+      "cta": "Write Now"
+    },
+    "care_followup": {
+      "design": "sensitive",
+      "resources": [
+        {
+          "name": "Crisis Support",
+          "links": ["741741", "988"]
+        },
+        {
+          "name": "Therapist Directories",
+          "links": ["PsychologyToday.com"]
+        }
+      ]
+    }
+  },
+  "settings": {
+    "timezone": "UTC",
+    "retryPolicy": {
+      "maxAttempts": 3,
+      "delay": "5 minutes"
+    },
+    "errorHandling": {
+      "notifyAdmin": true,
+      "adminEmail": "tech@innerspace.fake"
+    }
+  }
+}
